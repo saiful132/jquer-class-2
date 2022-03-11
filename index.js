@@ -4,6 +4,19 @@ function effect1() {
 }
 
 function effect2() {
-	var jsEffect2 = $(".a").attr("href");
-	$(".p2").text(jsEffect2);
+	var jqueryEffect = $(".a").attr("href");
+	$(".p2").text(jqueryEffect);
+}
+
+function effect3() {
+	var jsEffect3 = $(".a1").removeAttr("href");
+	$(".p3").text(jsEffect3);
+}
+
+function effect4() {
+	document.querySelector(".a2").setAttribute("href", "http://www.facebook.com");
+}
+
+function effect5() {
+	$(".a2").attr("href", "http://www.facebook.com");
 }

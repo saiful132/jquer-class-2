@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Jquery class2</title>
+		<script
+			src="https://kit.fontawesome.com/560b9ded06.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -15,7 +19,7 @@
 		<h1>
 			<a class="a" href="https://www.google.com" target="blank">Google</a>
 		</h1>
-
+		<h1 style="color: blue"><i class="fa-solid fa-arrow-up"></i></h1>
 		<h1 style="background: green; padding: 15px; display: inline-block">
 			how can we see the attribute of 'a' tag?
 		</h1>
@@ -50,6 +54,72 @@
 		</code>
 		<p class="p2">Effect will show here</p>
 		<h3>[They are same]</h3>
+		<h1>
+			<a
+				class="a1"
+				target="_blank"
+				style="color: green"
+				href="https://www.google.com"
+				>Google
+			</a>
+			<h1 style="color: blue"><i class="fa-solid fa-arrow-up"></i></h1>
+		</h1>
+		<h1 style="background: green; padding: 15px; display: inline-block">
+			Now if we want to remove the attribute of 'a' tag
+		</h1>
+		<h2>
+			JS CODE <i class="fa-solid fa-arrow-right-long"></i>
+
+			<code style="color: red; font-size: 14px"
+				>function effect3() { var jsEffect3 =
+				document.querySelector(".a1").removeAttribute("href");
+				document.querySelector(".p3").innerHTML = jsEffect3; }
+			</code>
+		</h2>
+
+		<h2>
+			JQUERY CODE <i class="fa-solid fa-arrow-right-long"></i>
+
+			<code style="color: red; font-size: 14px"
+				>function effect3() { var jsEffect3 = $(".a1").removeAttr("href");
+				$(".p3").text(jsEffect3); }
+			</code>
+		</h2>
+
+		<br />
+		<button onclick="effect3();">Click To see attribute remove or not?</button>
+		<p class="p3">effect will show here</p>
+		<br />
+		<h1>
+			<a
+				class="a2"
+				target="_blank"
+				style="color: black"
+				href="https://www.google.com"
+				>Google
+			</a>
+			<h1 style="color: blue"><i class="fa-solid fa-arrow-up"></i></h1>
+		</h1>
+		<h1 style="background: green; padding: 15px; display: inline-block">
+			Now if we want to set a attribute to 'a' tag
+		</h1>
+		<h1>
+			JS CODE <i class="fa-solid fa-arrow-right-long"></i>
+			<code style="color: red; font-size: 14px"
+				>function effect4() {
+				document.querySelector(".a1").setAttribute("href","http://www.facebook.com")
+				}</code
+			>
+		</h1>
+		<h1>
+			JQUERY CODE <i class="fa-solid fa-arrow-right-long"></i>
+			<code style="color: red; font-size: 14px">
+				function effect5() { $(".a2").attr("href","http://www.facebook.com"); }
+			</code>
+		</h1>
+		<button onclick="effect5()">
+			Click to change the attribute of google link
+		</button>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="index.js"></script>
