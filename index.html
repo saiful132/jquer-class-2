@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jquery class2</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1 style="color: darkgrey; text-align: center">
+			Today We will learn attribute manipulation
+			<hr />
+		</h1>
+		<h1>
+			<a class="a" href="https://www.google.com" target="blank">Google</a>
+		</h1>
+
+		<h1 style="background: green; padding: 15px; display: inline-block">
+			how can we see the attribute of 'a' tag?
+		</h1>
+		<h2>ans:</h2>
+
+		<h1>
+			JS CODE =
+			<code style="color: brown"
+				>document.querySelector("a").getAttribute("href")</code
+			>
+		</h1>
+		<h1>
+			JQUERY CODE =
+			<code style="color: brown">$("a").attr("href")</code>
+		</h1>
+		<button onclick="effect1();">
+			Click to see "Google" attribute with JS CODE effect
+		</button>
+		<code style="color: red"
+			>function effect1() { var jsEffect =
+			document.querySelector(".a").getAttribute("href");
+			document.querySelector(".p1").innerHTML = jsEffect; }</code
+		>
+		<p class="p1">Effect will show here</p>
+
+		<button onclick="effect2();">
+			Click to see "Google" attribute with JQUERY CODE effect
+		</button>
+		<code style="color: red"
+			>function effect2() { var jsEffect2 = $(".a").attr("href");
+			$(".p2").text(jsEffect2); }
+		</code>
+		<p class="p2">Effect will show here</p>
+		<h3>[They are same]</h3>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
